@@ -3,7 +3,7 @@
 ## The application consists in creating a list of tasks to be done by the user.
 ![Wygląd](image/Wyglad_aplikacji.jpg)
 ## In the input field, the user can enter what task he has to perform. Then, after clicking on the *Dodaj zadanie* button, a list of tasks will be created.
-![Wprowadzanie](Wprowadzanie_zadania.jpg)
+![Wprowadzanie](image/Wprowadzanie_zadania.jpg)
 
 ## The user can enter any number of sentences that will appear in the application field in the form of a list.
 ![Dodane](image/Zadania_dodane.jpg)
