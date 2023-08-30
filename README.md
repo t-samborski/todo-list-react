@@ -8,7 +8,7 @@
 ## The user can enter any number of sentences that will appear in the application field in the form of a list.
 ![Dodane](image/Zadania_dodane.jpg)
 ## The task list has several options to make it easier for the user to use it. Among other things, it is possible to mark tasks already completed using the green button on the left. Thanks to this, the task is automatically deleted and the mark symbol appears on the green button.
-![Oznaczone](image/Wyglad_odznaczone.jpg)
+![Oznaczone](image/Zadania_odznaczone.jpg)
 ## Thanks to the *Ukończ wszystkie* button, it is possible to mark all tasks as completed at once. This button then becomes inactive and changes its color so that the user knows that there is no task that is not completed.
 
 ![Wszystkie zakonczone](image/Wszystkie_ukonczone.jpg)
