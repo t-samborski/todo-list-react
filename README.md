@@ -1,36 +1,34 @@
-# Getting Started with Create React App
+# Tasks app
+### Website address: [Adres](https://t-samborski.github.io/todo-list-react/)
+## The application consists in creating a list of tasks to be done by the user.
+![Wygląd](Wyglad_aplikacji.jpg)
+## In the input field, the user can enter what task he has to perform. Then, after clicking on the *Dodaj zadanie* button, a list of tasks will be created.
+![Wprowadzanie](Wprowadzanie_zadania.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The user can enter any number of sentences that will appear in the application field in the form of a list.
+![Dodane](Zadania_dodane.jpg)
+## The task list has several options to make it easier for the user to use it. Among other things, it is possible to mark tasks already completed using the green button on the left. Thanks to this, the task is automatically deleted and the mark symbol appears on the green button.
+![Oznaczone](Wyglad_odznaczone.jpg)
+## Thanks to the *Ukończ wszystkie* button, it is possible to mark all tasks as completed at once. This button then becomes inactive and changes its color so that the user knows that there is no task that is not completed.
 
-## Available Scripts
+![Wszystkie zakonczone](Wszystkie_ukonczone.jpg)
 
-In the project directory, you can run:
+### In addition, there is an option to hide completed tasks so that they are not visible in the task list. Of course, you can view them back at any time.
 
-### `npm start`
+![Ukryte](Ukryte.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The last element of the application that the user can use is deleting tasks. Both those marked as completed and those not yet completed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![kasowanie](Kasowanie.jpg)
 
-### `npm run build`
+# Technologies used in the application.
+-HTML
+-CSS
+-Java Script
+-Normalize CSS
+-BEM convention
+-React.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### The application is created by styled-components. All sections of the website are in a separate directory, and the functions are in one hook. This makes the App.js file as transparent as possible.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
+### The useState hook allows you to save the changes made to the application, so that the user will not lose the changes even after closing the application or refreshing the page.
