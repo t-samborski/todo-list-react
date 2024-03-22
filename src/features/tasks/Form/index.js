@@ -12,12 +12,11 @@ const Form = () => {
     const onFormSubmit = (event) => {
         event.preventDefault();
         if (newTaskContent !== "") {
-
-           dispatch(addTask({
+            dispatch(addTask({
                 content: newTaskContent,
                 done: false,
                 id: nanoid(),
-           }))
+            }))
             setNewTaskContent("");
             inputRef.current.focus();
         }
@@ -30,7 +29,6 @@ const Form = () => {
                 placeholder="Co jest do zrobienia"
                 onChange={({ target }) => setNewTaskContent(target.value)} />
             <Button>Dodaj zadanie</Button>
-
         </FormList>
     )
 };

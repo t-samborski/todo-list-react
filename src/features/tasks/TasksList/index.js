@@ -3,7 +3,6 @@ import { List, Button, Content, Container } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 
 const TasksList = () => {
-
     const { tasks, hideDone } = useSelector(selectTasks)
     const dispatch = useDispatch();
 
@@ -17,11 +16,11 @@ const TasksList = () => {
                         onClick={() => dispatch(toggleTaskDone(task.id))}>{task.done ? "✔" : ""}
                     </Button>
                     <Content
-                        doneContent={task.done}>
+                        $doneContent={task.done}>
                         {task.content}
                     </Content>
                     <Button
-                        deleteButton
+                        $primary
                         onClick={() => dispatch(removeTask(task.id))}>🗑</Button>
                 </List>
             ))}

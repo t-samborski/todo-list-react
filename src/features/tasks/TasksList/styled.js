@@ -15,6 +15,7 @@ export const List = styled.li`
     display: none;
     `}
 `;
+
 export const Button = styled.button`
     margin: 0, 5px;
     padding: 10px;
@@ -22,15 +23,16 @@ export const Button = styled.button`
     border: none;
     color: white;
     transition: 1s;
-    ${({ deleteButton }) => deleteButton && css`
+    ${({ $primary }) => $primary && css`
         background-color: red;
     `}
     &:hover {
         transform: scale(1.1);
 }`;
+
 export const Content = styled.div`
     padding: 10px;
-    ${({doneContent}) => doneContent && css`
+    ${({ $doneContent }) => $doneContent && css`
         text-decoration: line-through;
     `}
 `;

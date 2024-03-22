@@ -14,7 +14,6 @@ function Tasks() {
         body={<TasksList />}
         extraHeaderContent={<Buttons/>} />
     </Container>
-
   );
 }
 export default Tasks;
