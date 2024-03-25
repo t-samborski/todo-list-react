@@ -23,13 +23,17 @@ const taskSlice = createSlice({
         },
         setAllTask: ({ tasks }) => {
             tasks.map(task => task.done = true)
-        }
+        },
+        fetchExampleTasks: () => { },
+        setTasks: (state, {payload: tasks}) => {
+            state.tasks = tasks;
+        },
     },
 });
 const selectTasksState = state => state.tasks;
 
-export const { addTask, toggleHide, toggleTaskDone, removeTask, setAllTask } = taskSlice.actions;
+export const { addTask, toggleHide, toggleTaskDone, removeTask, setAllTask, fetchExampleTasks, setTasks } = taskSlice.actions;
 export const selectTasks = state => selectTasksState(state).tasks;
-export const selectTaskEmpty = state => selectTasks(state).lenght === 0;
+export const selectTaskEmpty = state => selectTasks(state).length === 0;
 export const selectHideDoneTasks = state => selectTasksState(state).hideDone;
 export default taskSlice.reducer;

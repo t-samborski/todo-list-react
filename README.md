@@ -28,6 +28,7 @@
 - Normalize CSS
 - BEM convention
 - React.js
+- Redux
 
 #### The application is created by styled-components. All sections of the website are in a separate directory, and the functions are in one hook. This makes the App.js file as transparent as possible.
 
