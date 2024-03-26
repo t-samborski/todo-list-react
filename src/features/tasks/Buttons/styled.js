@@ -17,6 +17,7 @@ export const Button = styled.button`
     padding: 1px;
     border: none;
     background: none;
+    text-align: right;
 
     &:disabled {
     color: rgb(170, 170, 170);
