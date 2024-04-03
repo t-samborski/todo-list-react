@@ -1,8 +1,8 @@
-import { Container, List } from "./styled";
+import { Container, List, Title } from "./styled";
 const Section = ({ title, body, extraHeaderContent, sampleTasks }) => (
     <Container>
         <List>
-            <h2>{title}</h2>
+            <Title>{title}</Title>
             {sampleTasks}
             {extraHeaderContent}
         </List>

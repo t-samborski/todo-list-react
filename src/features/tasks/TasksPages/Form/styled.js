@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const FormList = styled.form`
+export const Wrapper = styled.form`
     display: grid;
     grid-template-columns: 1fr 200px;
     padding: 10px;
@@ -9,9 +9,12 @@ export const FormList = styled.form`
 @media (max-width: 767px) {
     grid-template-columns: 1fr;
     }
+    ${({ search }) => search && css`
+    grid-template-columns: 1fr;
+    `}
 `;
 
-export const InputTask = styled.input`
+export const Input = styled.input`
     padding: 5px;
     margin: 5px;
 `;

@@ -10,9 +10,9 @@ html {
 }
 
 body {
-  margin: 40px auto;
+  margin: 20px auto;
   max-width: 800px;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(200, 200, 200);
   font-family: Arial, Helvetica, sans-serif;
 }
 `;

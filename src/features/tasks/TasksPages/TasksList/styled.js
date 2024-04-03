@@ -1,4 +1,10 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+
+export const StyledNavLink = styled(NavLink)`
+text-decoration: none;
+color: teal;
+`
 
 export const Container = styled.div`
     padding: 10px;

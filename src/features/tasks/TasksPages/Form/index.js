@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { FormList, InputTask, Button } from "./styled";
+import { Wrapper, Input, Button } from "./styled";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../taskSlice";
 import { nanoid } from "@reduxjs/toolkit";
@@ -23,14 +23,14 @@ const Form = () => {
         }
     };
     return (
-        <FormList onSubmit={onFormSubmit}>
-            <InputTask
+        <Wrapper onSubmit={onFormSubmit}>
+            <Input
                 ref={inputRef}
                 value={newTaskContent}
                 placeholder="Co jest do zrobienia"
                 onChange={({ target }) => setNewTaskContent(target.value)} />
             <Button>Dodaj zadanie</Button>
-        </FormList>
+        </Wrapper>
     )
 };
 export default Form;

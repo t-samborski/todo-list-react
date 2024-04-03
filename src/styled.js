@@ -9,11 +9,14 @@ padding: 10px;
 margin: 2px;
 border-radius: 0px 0px 10px 10px;
 text-align: center;
-font-size: 20px;
+font-size: 18px;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 &.active {
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 3px black;
+}
+&:hover{
+    background-color: rgba(0, 128, 128, 0.850);
 }
 `
 

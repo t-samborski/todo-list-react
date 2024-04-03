@@ -9,8 +9,11 @@ const TaskPages = () => {
     const task = useSelector(state => getTaskById(state, params.id));
 
     return (
-        <TaskContent title={task ? task.content : "Nie znaleziono zadania"}
-            body={<><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"} </>} />
+        <TaskContent title={task ? task.content : "Nie odnaleziona...😬"}
+            body={!!task && (<>
+                <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"} 
+                </>)
+            } />
     )
 }
 
