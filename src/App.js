@@ -1,12 +1,12 @@
 import AutorPages from "./features/AutorPages";
 import TasksPages from "./features/tasks/TasksPages";
 import TaskPages from "./features/tasks/TaskPage";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 import { StyledNavLink, Navigation } from "./styled";
 
 
 const App = () => (
-    <BrowserRouter>
+    <HashRouter>
         <Navigation>
             <StyledNavLink to="/zadania">Lista zadań</StyledNavLink>
             <StyledNavLink to="/autor">O autorze</StyledNavLink>
@@ -25,7 +25,7 @@ const App = () => (
                 <Redirect to="/zadania"/>
             </Route>
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
 )
 
 export default App;
