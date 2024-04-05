@@ -3,14 +3,12 @@ import searchQueryParameter from "../searchQueryParameter";
 import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters";
 
 const Search = () => {
- 
     const query = useQueryParameter(searchQueryParameter);
     const replaceQueryParameter = useReplaceQueryParameter();
-
-    const onInputChange = ({target}) => {
+    const onInputChange = ({ target }) => {
         replaceQueryParameter({
             key: searchQueryParameter,
-            value: target.value.trim() !=="" ? target.value : undefined,
+            value: target.value.trim() !== "" ? target.value : undefined,
         });
     };
 
@@ -18,7 +16,7 @@ const Search = () => {
         <Wrapper search>
             <Input
                 placeholder="Wyszukaj zadania"
-                value= {query || ""}
+                value={query || ""}
                 onChange={onInputChange}
             />
         </Wrapper>

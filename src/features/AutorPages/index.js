@@ -1,8 +1,7 @@
 import { Article } from "../../common/Article";
 
-
 const AutorPages = () => (
-    <Article/>
-  );
+  <Article />
+);
 
 export default AutorPages;

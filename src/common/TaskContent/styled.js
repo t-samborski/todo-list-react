@@ -21,7 +21,7 @@ box-shadow: 5px 5px 5px grey;
 margin: 2px;
 font-size: 20px;
 `
-export const Section= styled.section`
+export const Section = styled.section`
 display: grid;
 grid-template-columns: 100px 1fr 100px;
 align-items: center;

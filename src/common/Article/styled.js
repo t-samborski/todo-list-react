@@ -11,7 +11,7 @@ background-color: teal;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 `
-export const Section= styled.section`
+export const Section = styled.section`
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 background-color: white;
 padding: 10px;

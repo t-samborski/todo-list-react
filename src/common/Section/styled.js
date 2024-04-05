@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Title = styled.h2`
 margin: 12px;
 `
-
 export const Container = styled.section`
     padding: 5px;
 `;
